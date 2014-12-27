@@ -1,3 +1,6 @@
+#pragma warning(disable:4244)
+#pragma warning(disable:4305)
+
 #include <vector>
 #include <iostream>
 #include <fstream>
@@ -8,6 +11,11 @@
 #include "Triangle.h"
 #include "Sphere.h"
 #include "Vector2.h"
+#include "Sample.h"
+#include "SimpleTexture.h"
+#include "MarbleTexture.h"
+#include "NoiseTexture.h"
+#include "DynSphere.h"
 
 using namespace std;
 
@@ -39,7 +47,7 @@ int main(){
 				}
 			}
 			if (is_a_hit){
-				img.set(i, j, rec.color);
+				img.set(i, j, rgb(0,0,0));
 			}
 			else{
 				img.set(i, j, rgb(0.2f, 0.2f, 0.2f));

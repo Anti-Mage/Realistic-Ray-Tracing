@@ -1,20 +1,25 @@
-﻿Build started 2014/12/13 0:21:10.
-     1>Project "E:\Github\zppSTL\Realistic Ray Tracing\Realistic Ray Tracing\Realistic Ray Tracing.vcxproj" on node 2 (Build target(s)).
+﻿Build started 2014/12/27 22:32:29.
+     1>Project "D:\GitHub\Realistic-Ray-Tracing\Realistic Ray Tracing\Realistic Ray Tracing.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
          main.cpp
-     1>e:\github\zppstl\realistic ray tracing\realistic ray tracing\main.cpp(33): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
        Link:
-         D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Github\zppSTL\Realistic Ray Tracing\Debug\Realistic Ray Tracing.exe" /INCREMENTAL /NOLOGO opencv_calib3d248d.lib opencv_contrib248d.lib opencv_core248d.lib opencv_features2d248d.lib opencv_flann248d.lib opencv_gpu248d.lib opencv_highgui248d.lib opencv_imgproc248d.lib opencv_legacy248d.lib opencv_ml248d.lib opencv_nonfree248d.lib opencv_objdetect248d.lib opencv_photo248d.lib opencv_stitching248d.lib opencv_ts248d.lib opencv_video248d.lib opencv_videostab248d.lib opencv_calib3d248.lib opencv_contrib248.lib opencv_core248.lib opencv_features2d248.lib opencv_flann248.lib opencv_gpu248.lib opencv_highgui248.lib opencv_imgproc248.lib opencv_legacy248.lib opencv_ml248.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Github\zppSTL\Realistic Ray Tracing\Debug\Realistic Ray Tracing.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Github\zppSTL\Realistic Ray Tracing\Debug\Realistic Ray Tracing.lib" /MACHINE:X86 Debug\Image.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GitHub\Realistic-Ray-Tracing\Debug\Realistic Ray Tracing.exe" /INCREMENTAL /NOLOGO opencv_calib3d248d.lib opencv_contrib248d.lib opencv_core248d.lib opencv_features2d248d.lib opencv_flann248d.lib opencv_gpu248d.lib opencv_highgui248d.lib opencv_imgproc248d.lib opencv_legacy248d.lib opencv_ml248d.lib opencv_nonfree248d.lib opencv_objdetect248d.lib opencv_ocl248d.lib opencv_photo248d.lib opencv_stitching248d.lib opencv_superres248d.lib opencv_ts248d.lib opencv_video248d.lib opencv_videostab248d.lib opencv_calib3d248.lib opencv_contrib248.lib opencv_core248.lib opencv_features2d248.lib opencv_flann248.lib opencv_gpu248.lib opencv_highgui248.lib opencv_imgproc248.lib opencv_legacy248.lib opencv_ml248.lib opencv_nonfree248.lib opencv_objdetect248.lib opencv_ocl248.lib opencv_photo248.lib opencv_stitching248.lib opencv_superres248.lib opencv_ts248.lib opencv_video248.lib opencv_videostab248.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GitHub\Realistic-Ray-Tracing\Debug\Realistic Ray Tracing.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GitHub\Realistic-Ray-Tracing\Debug\Realistic Ray Tracing.lib" /MACHINE:X86 Debug\DynSphere.obj
+         Debug\Image.obj
          Debug\main.obj
+         Debug\MarbleTexture.obj
+         Debug\NoiseTexture.obj
          Debug\ONB.obj
          Debug\Sample.obj
+         Debug\SolidNoise.obj
          Debug\Sphere.obj
          Debug\Triangle.obj
          Debug\Vector3.obj
-         Realistic Ray Tracing.vcxproj -> E:\Github\zppSTL\Realistic Ray Tracing\Debug\Realistic Ray Tracing.exe
-     1>Done Building Project "E:\Github\zppSTL\Realistic Ray Tracing\Realistic Ray Tracing\Realistic Ray Tracing.vcxproj" (Build target(s)).
+     1>SolidNoise.obj : error LNK2005: "double __cdecl drand48(void)" (?drand48@@YANXZ) already defined in Sample.obj
+     1>SolidNoise.obj : error LNK2005: "void __cdecl srand48(unsigned int)" (?srand48@@YAXI@Z) already defined in Sample.obj
+     1>D:\GitHub\Realistic-Ray-Tracing\Debug\Realistic Ray Tracing.exe : fatal error LNK1169: one or more multiply defined symbols found
+     1>Done Building Project "D:\GitHub\Realistic-Ray-Tracing\Realistic Ray Tracing\Realistic Ray Tracing.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.89
+Time Elapsed 00:00:01.05

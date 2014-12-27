@@ -18,6 +18,8 @@ public:
 	void gammaCorret(float gamma);
 	void writePPM(std::ostream& out);
 	void readPPM(const std::string& file_name);
+	int width(){ return nx; }
+	int height() { return ny; }
 
 private:
 	rgb** raster;	//π‚’§æÿ’Û

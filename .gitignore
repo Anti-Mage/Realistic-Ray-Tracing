@@ -48,3 +48,6 @@ Temporary Items
 *.pdb
 *.tlog
 *.obj
+*.opensdf
+*.idb
+*.idb

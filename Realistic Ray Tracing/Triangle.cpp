@@ -44,7 +44,7 @@ bool Triangle::hit(const Ray& r, float tmin, float tmax, float time, HitRecord& 
 	if (tval >= tmin || tval <= tmax){
 		record.t = tval;
 		record.normal = unitVector(cross((p1 - p0), (p2 - p0)));
-		record.color = color;
+		//record.color = color;
 		
 		return true;
 	}
