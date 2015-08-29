@@ -29,15 +29,15 @@ inline float RNG::operator()(){
 
 static unsigned long long seed = 1;
 
-double drand48(void)
+static double drand48(void)
 {
 	seed = (a * seed + c) & 0xFFFFFFFFFFFFLL;
-	unsigned int x = seed >> 16;
+	unsigned int x = (unsigned int)(seed >> 16);
 	return  ((double)x / (double)m);
 
 }
 
-void srand48(unsigned int i)
+static void srand48(unsigned int i)
 {
 	seed = (((long long int)i) << 16) | rand();
 }

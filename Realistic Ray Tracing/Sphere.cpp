@@ -22,7 +22,7 @@ bool Sphere::hit(const Ray& r, float tmin, float tmax, float time, HitRecord& re
 		if (t < tmin || t > tmax)
 			return false;
 
-		record.t = t;
+		record.t = (float)t;
 		record.normal = unitVector(r.origin() + t * r.direction() - center);
 		//record.color = color;
 		return true;

@@ -1,9 +1,10 @@
+#pragma warning(disable:4244)
+
 #include "Sample.h"
 #include "Vector2.h"
 #include <math.h>
 #include <stdlib.h>
 #include "RNG.h"
-
 
 void random(Vector2* samples, int num_sample){
 	for (int i = 0; i < num_sample; ++i){
@@ -111,7 +112,7 @@ void cubicSplineFilter(Vector2* samples, int num_samples){
 
 void random(float* samples, int num_samples){
 	for (int i = 0; i < num_samples; i++){
-		samples[i] = drand48();
+		samples[i] = (float)drand48();
 	}
 }
 
@@ -123,7 +124,7 @@ void jitter(float* samples, int num_samples){
 
 void shuffle(float* samples, int num_samples){
 	for (int i = num_samples - 2; i >= 0; --i){
-		int target = int(drand48() *(double)i);
+		int target = int(drand48() * (double)i);
 		float tmp = samples[i + 1];
 		samples[i + 1] = samples[target];
 		samples[target] = tmp;

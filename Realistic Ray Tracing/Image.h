@@ -20,6 +20,7 @@ public:
 	void readPPM(const std::string& file_name);
 	int width(){ return nx; }
 	int height() { return ny; }
+	rgb getPixel(int x, int y);
 
 private:
 	rgb** raster;	//¹âÕ¤¾ØÕó

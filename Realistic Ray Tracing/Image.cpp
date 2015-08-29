@@ -118,3 +118,7 @@ void Image::readPPM(const std::string& file_name){
 		}
 	}
 }
+
+rgb Image::getPixel(int x, int y){
+	return raster[x][y];
+}
