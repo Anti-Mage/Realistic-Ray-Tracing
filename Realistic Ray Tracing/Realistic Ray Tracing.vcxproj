@@ -83,12 +83,14 @@
     <ClCompile Include="ImageTexture.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MarbleTexture.cpp" />
+    <ClCompile Include="MeshTriangle.cpp" />
     <ClCompile Include="NoiseTexture.cpp" />
     <ClCompile Include="ONB.cpp" />
     <ClCompile Include="Sample.cpp" />
     <ClCompile Include="SolidNoise.cpp" />
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="UVSphere.cpp" />
     <ClCompile Include="Vector3.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +100,8 @@
     <ClInclude Include="Image.h" />
     <ClInclude Include="ImageTexture.h" />
     <ClInclude Include="MarbleTexture.h" />
+    <ClInclude Include="Mesh.h" />
+    <ClInclude Include="MeshTriangle.h" />
     <ClInclude Include="NoiseTexture.h" />
     <ClInclude Include="ONB.h" />
     <ClInclude Include="Ray.h" />
@@ -110,8 +114,10 @@
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Triangle.h" />
+    <ClInclude Include="UVSphere.h" />
     <ClInclude Include="Vector2.h" />
     <ClInclude Include="Vector3.h" />
+    <ClInclude Include="Vertex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

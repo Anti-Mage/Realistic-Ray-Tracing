@@ -23,6 +23,6 @@ rgb ImageTexture::value(const Vector2& uv, const Vector3& p) const{
 		image->getPixel(iu + 1, iv)*tu*(1 - tv) +
 		image->getPixel(iu, iv + 1)*(1 - tu)*tv +
 		image->getPixel(iu + 1, iv + 1)*tu*tv;
-
+	
 	return c;
 }
